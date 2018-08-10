@@ -1,1 +1,1 @@
-tomaltach_mc_server_files
+The files to run a slightly customized minecraft server for a group of friends.
