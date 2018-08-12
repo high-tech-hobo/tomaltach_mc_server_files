@@ -3,15 +3,15 @@ The files here are the necessary files for a personal minecraft server that is n
 
 
 ## Config
-PLACEHOLDER TEXT
+The folder that contains the majority of the config files for Forge and the installed mods. Most mods make their own folder within this, but some just have loose files.
 
 
 ## Libraries
-PLACEHOLDER TEXT
+Various Java libraries needed for vanilla Minecraft.
 
 
 ## Logs
-PLACEHOLDER TEXT
+Server log file storage. Keeps separate files for deugging logs and general server logs.
 
 
 ## Mods
@@ -34,15 +34,15 @@ A generator preset for OTG that adds a lot of very beautiful biomes using only v
 
 
 ## World
-PLACEHOLDER TEXT
+Default folder for save/map data. This is currently a map with completely vanilla terrain and a new folder will be generated once the server is started with the OTG configuration.
 
 
 ## Banned-ips.json
-PLACEHOLDER TEXT
+Formatted list of banned IP addresses that will be denied connetion to the server.
 
 
 ## Banned-players.json
-PLACEHOLDER TEXT
+Formatted list of banned player names and UUIDs.
 
 
 ## Eula.txt
@@ -70,12 +70,12 @@ A short bash command for starting the server with the proper amount of RAM alloc
 
 
 ## Usercache.json
-PLACEHOLDER TEXT
+Formatted list of all player usernames and UUIDs that have ever joined the server and when they last joined.
 
 
 ## Usernamecache.json
-PLACEHOLDER TEXT
+Formatted list of just player names and UUIDs that have joined the server, does not include date and time last joined.
 
 
 ## Whitelist.json
-Formatted list of player names and UDIDs used to only allow listed players onto the server.
+Formatted list of player names and UUIDs used to only allow listed players onto the server.
