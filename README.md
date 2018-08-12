@@ -1,5 +1,5 @@
 # Not Quite Vanilla Minecraft Server
-The files here are the necessary files for a personal minecraft server that is not quite vanilla. There are no mods installed that change blocks in or add blocks to the game. The mods that are installed are for exploration and building purposes only.
+The files here are the necessary files for a personal minecraft server that is not quite vanilla. There are no mods installed that change blocks in or add blocks to the game. The mods that are installed are for exploration and building purposes only. This repo is going to be used to keep files synced and updated on a remote host that will actually be running the server. There wouldn't be much point to just storing a Minecraft server in a repo unless the machine that will be running the server is remote. This could be managed with FTP, but this way I can have a copy of the server folder on my own machine and modify as I see fit then simply push that to the remote host. It also allows me to test a server configuration on my own machine before merging with the master branch, so if I want to add something and see how it plays I don't jeopardize the main world files and configs should something go wrong.
 
 
 ## Config
