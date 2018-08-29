@@ -108,6 +108,7 @@ Formatted list of player names and UUIDs used to only allow listed players onto 
 ## Detailed File Structure
 
 ```
+tomaltach_mc_server_files
 ├── Biome Bundle/                                      <- world data for OTG preset world
 |   ├── data/                                          <- world data not specific to dimensions
 |   |   ├── advancements/                              <- player advancement progress files
@@ -136,10 +137,10 @@ Formatted list of player names and UUIDs used to only allow listed players onto 
 |   |   |
 |   |   └── session.lock                               <- last level access info (see apx. 1)
 |   |
-|   ├── OpenTerrainGenerator/                          <- 
-|   |   ├── Dimensions.txt                             <- 
+|   ├── OpenTerrainGenerator/                          <- OTG info for world gen
+|   |   ├── Dimensions.txt                             <- dimension list (not exactly sure based on content)
 |   |   |
-|   |   └── WorldBorder.txt                            <- 
+|   |   └── WorldBorder.txt                            <- generation limit (0,0,0 if no limit)
 |   |
 |   ├── playerdata/                                    <- player data not specific to dimensions
 |   |
@@ -148,35 +149,35 @@ Formatted list of player names and UUIDs used to only allow listed players onto 
 |   └── session.lock                                   <- last level access info (see apx. 1)
 |
 ├── Config/                                            <- config files for Forge and mods
-|   ├── sponge/                                        <- 
-|   |   ├── worlds/                                    <- 
-|   |   |   └── minecraft/                             <- 
-|   |   |       ├── nether/                            <- 
-|   |   |       |   ├── DIM-1/                         <- 
-|   |   |       |   |   └── world.conf                 <- 
+|   ├── sponge/                                        <- Sponge config files
+|   |   ├── worlds/                                    <- multi-world files
+|   |   |   └── minecraft/                             <- default minecraft world config
+|   |   |       ├── nether/                            <- dimension using Nether config
+|   |   |       |   ├── DIM-1/                         <- specific dimension instance folder
+|   |   |       |   |   └── world.conf                 <- Nether config
 |   |   |       |   |
-|   |   |       |   └── dimension.conf                 <- 
+|   |   |       |   └── dimension.conf                 <- general Nether config
 |   |   |       |
-|   |   |       ├── overworld/                         <- 
-|   |   |       |   ├── Biome Bundle/                  <- 
-|   |   |       |   |   └── world.conf                 <- 
+|   |   |       ├── overworld/                         <- dimensions using overworld config
+|   |   |       |   ├── Biome Bundle/                  <- BB specific config folder
+|   |   |       |   |   └── world.conf                 <- world config
 |   |   |       |   |
-|   |   |       |   ├── world/                         <- 
-|   |   |       |   |   └── world.conf                 <- 
+|   |   |       |   ├── world/                         <- default world config folder
+|   |   |       |   |   └── world.conf                 <- world config
 |   |   |       |   |
-|   |   |       |   └── dimension.conf                 <- 
+|   |   |       |   └── dimension.conf                 <- general overworld config
 |   |   |       |
-|   |   |       └── the_end/                           <- 
-|   |   |           ├── DIM1/                          <- 
-|   |   |           |   └── world.conf                 <- 
+|   |   |       └── the_end/                           <- dimensions using End config
+|   |   |           ├── DIM1/                          <- specific dimension instance folder
+|   |   |           |   └── world.conf                 <- world config
 |   |   |           |
-|   |   |           └── dimension.conf                 <- 
+|   |   |           └── dimension.conf                 <- general End config
 |   |   |
-|   |   ├── custom_data.conf                           <- 
+|   |   ├── custom_data.conf                           <- CHECKED DOCS AND NOT SURE
 |   |   |
-|   |   ├── global.conf                                <- 
+|   |   ├── global.conf                                <- SPonge global settings (see apx. 1)
 |   |   |
-|   |   └── tracker.conf                               <- 
+|   |   └── tracker.conf                               <- CHECKED DOCS AND NOT SURE
 |   |
 |   ├── voxelsniper/                                   <- VoxelSniper data folder
 |   |   └── voxelsniper.conf                           <- main VoxelSniper config
@@ -249,3 +250,4 @@ Formatted list of player names and UUIDs used to only allow listed players onto 
 Function Files  - https://minecraft.gamepedia.com/Function/
 Session Files   - https://minecraft.gamepedia.com/Level_format#session.lock_format (bottom of page)
 Chunk/Region Files - https://minecraft.gamepedia.com/Region_file_format
+Sponge Global Config File - https://docs.spongepowered.org/stable/en/server/getting-started/configuration/sponge-conf.html
