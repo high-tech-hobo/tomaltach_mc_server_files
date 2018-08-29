@@ -247,7 +247,7 @@ tomaltach_mc_server_files
 
 
 ## Appendix 1
-Function Files  - https://minecraft.gamepedia.com/Function/
-Session Files   - https://minecraft.gamepedia.com/Level_format#session.lock_format (bottom of page)
-Chunk/Region Files - https://minecraft.gamepedia.com/Region_file_format
+Function Files  - https://minecraft.gamepedia.com/Function/ <br>
+Session Files   - https://minecraft.gamepedia.com/Level_format#session.lock_format (bottom of page) <br>
+Chunk/Region Files - https://minecraft.gamepedia.com/Region_file_format <br>
 Sponge Global Config File - https://docs.spongepowered.org/stable/en/server/getting-started/configuration/sponge-conf.html
