@@ -18,7 +18,7 @@ Various Java libraries needed for vanilla Minecraft.
 <br>
 
 ### Logs
-Server log file storage. Keeps separate files for deugging logs and general server logs.
+Server log file storage. Keeps separate files for debugging logs and general server logs.
 
 <br>
 
@@ -36,7 +36,7 @@ Forge is a modding API that allows for more complex mods to be installed. Curren
 VoxelSniper is a long range terrain editing and building tool. It allows for the use of various "brushes" in game much like 3D modeling software.
 
 ##### [Open Terrain Generator](https://minecraft.curseforge.com/projects/open-terrain-generator) (OTG)
-This is an open source Minecraft terrrain customization API. It allows for complete control over the Minecraft generator settings. Presets can be downloaded from various places.
+This is an open source Minecraft terrain customization API. It allows for complete control over the Minecraft generator settings. Presets can be downloaded from various places.
 
 ##### [Biome Bundle](https://minecraft.curseforge.com/projects/biome-bundle)
 A generator preset for OTG that adds a lot of very beautiful biomes using only vanilla Minecraft blocks.
@@ -49,7 +49,7 @@ Default folder for save/map data. This is currently a map with completely vanill
 <br>
 
 ### Banned-ips.json
-Formatted list of banned IP addresses that will be denied connetion to the server.
+Formatted list of banned IP addresses that will be denied connection to the server.
 
 <br>
 
@@ -128,7 +128,7 @@ tomaltach_mc_server_files
 |   |   └── session.lock                               <- last level access info (see apx. 1)
 |   |
 |   ├── DIM-1/                                         <- world data for Nether dimension
-|   |   ├── data/                                      <- non-player data for Nether dimensio
+|   |   ├── data/                                      <- non-player data for Nether dimension
 |   |   |   ├── advancements/                          <- player advancement progress files
 |   |   |   |
 |   |   |   └── functions/                             <- folder for function files (see apx. 1)
@@ -144,7 +144,7 @@ tomaltach_mc_server_files
 |   |
 |   ├── playerdata/                                    <- player data not specific to dimensions
 |   |
-|   ├── region/                                        <- cunk files (see apx. 1)
+|   ├── region/                                        <- chunk files (see apx. 1)
 |   |
 |   └── session.lock                                   <- last level access info (see apx. 1)
 |
@@ -175,7 +175,7 @@ tomaltach_mc_server_files
 |   |   |
 |   |   ├── custom_data.conf                           <- CHECKED DOCS AND NOT SURE
 |   |   |
-|   |   ├── global.conf                                <- SPonge global settings (see apx. 1)
+|   |   ├── global.conf                                <- Sponge global settings (see apx. 1)
 |   |   |
 |   |   └── tracker.conf                               <- CHECKED DOCS AND NOT SURE
 |   |
@@ -184,7 +184,7 @@ tomaltach_mc_server_files
 |   |
 |   ├── forge.cfg                                      <- general Forge config
 |   |
-|   └── forgeChunkLoading.cfg                          <- cunk loading control config
+|   └── forgeChunkLoading.cfg                          <- chunk loading control config
 |
 ├── libraries/                                         <- all the java libraries, not going to break it down
 |
